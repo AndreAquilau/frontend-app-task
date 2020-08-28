@@ -54,7 +54,7 @@ export default function Lista<T>(props: Props<T>) {
           </tr>
         </thead>
         <tbody>
-          {React.Children.map(elJSX, (child) => {
+          {React.Children.map(elJSX || [<></>], (child) => {
             return React.cloneElement(child as React.ReactElement);
           })}
         </tbody>
