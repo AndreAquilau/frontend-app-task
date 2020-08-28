@@ -7,6 +7,9 @@ export interface Props<T> extends P<T> {
 export default function Lista<T>(props: Props<T>) {
   const elJSX = props.tasks.map((obj: any) => {
     console.log(obj.estado);
+    if (!obj) {
+      return <></>;
+    }
     if (!obj.estado) {
       return (
         <tr className="listRow" key={obj.id}>
@@ -39,7 +42,6 @@ export default function Lista<T>(props: Props<T>) {
         </tr>
       );
     }
-    return <></>;
   });
 
   return (
