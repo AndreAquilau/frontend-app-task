@@ -1,0 +1,11 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true,
+  },
+  "code-runner.executorMap": {
+    "javascript": "node",
+    "typescript": "ts-node",
+  },
+  "compile-hero.disable-compile-files-on-did-save-code": true
+}
