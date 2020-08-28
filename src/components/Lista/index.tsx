@@ -39,6 +39,7 @@ export default function Lista<T>(props: Props<T>) {
         </tr>
       );
     }
+    return <></>;
   });
 
   return (

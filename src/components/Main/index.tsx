@@ -21,7 +21,7 @@ export default class Main<T> extends Component {
   componentDidMount() {
     axios
       .get('/task', {
-        baseURL: 'http://localhost:5000/',
+        baseURL: process.env.API_URL,
       })
       .then((res) => {
         this.setState({
